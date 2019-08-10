@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="IRCTC Mobile App">
+
+	<listeners>
+		<listener class-name="listeners.CustomListeners"></listener>
+		<listener class-name="listeners.ExtentReporterNG"></listener>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Test App">
+		<classes>
+			<class name="testcases.TestApp" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
